@@ -1,0 +1,111 @@
+<!-- SPDX-FileCopyrightText: 2026 Logenium Authors and Contributors -->
+<!-- SPDX-License-Identifier: BSD-3-Clause -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Logenium - A Logisim-like logic circuit simulator built with C++23">
+    <title>Logenium - Logic Circuit Simulator</title>
+    <link rel="stylesheet" href="index.css">
+    <script type="module" src="toggle-theme.js"></script>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="navbar-container">
+        <div class="navbar-logo">Logenium</div>
+        <ul class="navbar-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="docs.html">Docs</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <header>
+      <div class="theme-toggle">
+        <span class="theme-toggle-label">Theme</span>
+        <div class="toggle-switch" id="themeToggle">
+          <div class="toggle-slider">☀️</div>
+        </div>
+      </div>
+      <h1>Logenium</h1>
+      <p>A modern logic circuit simulator built with C++23</p>
+    </header>
+
+    <div class="container">
+      <section class="section" id="about">
+        <h2>About</h2>
+        <p>
+          Logenium is a Logisim-like logic circuit simulator in early development.
+        </p>
+      </section>
+
+      <!-- Keeping this for now, but commented out
+      <section class="section">
+        <h2>Features</h2>
+        <div class="features">
+          <div class="feature">
+            <h3>Cross-Platform</h3>
+            <p>Native support for Windows and Linux (X11 and Wayland)</p>
+          </div>
+          <div class="feature">
+            <h3>Modern C++23</h3>
+            <p>Built with the latest C++ standards and best practices</p>
+          </div>
+          <div class="feature">
+            <h3>RTTI-Free Type System</h3>
+            <p>LLVM-style casting for efficient runtime type checking</p>
+          </div>
+          <div class="feature">
+            <h3>Platform Abstraction</h3>
+            <p>Clean abstraction layer over Windows API, XCB, and Wayland protocols</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>Technology Stack</h2>
+        <div class="tech-stack">
+          <span class="tech-badge">C++23</span>
+          <span class="tech-badge">Clang</span>
+          <span class="tech-badge">CMake</span>
+          <span class="tech-badge">Ninja</span>
+          <span class="tech-badge">GoogleTest</span>
+          <span class="tech-badge">Windows API</span>
+          <span class="tech-badge">XCB</span>
+          <span class="tech-badge">Wayland</span>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>Getting Started</h2>
+        <p><strong>Requirements:</strong> Clang compiler (GNU-compatible driver)</p>
+        <p style="margin-top: 1rem;"><strong>Build:</strong></p>
+        <pre>
+<code>export CC=clang CXX=clang++</code>
+<code>cmake -B build -G Ninja</code>
+<code>cmake --build build</code>
+<code>./build/logenium</code>
+        </pre>
+      </section>
+
+      <section class="section">
+        <h2>Project Status</h2>
+        <p>
+          Logenium is in early development. Current implementation includes:
+        </p>
+        <ul style="margin-left: 2rem; margin-top: 1rem;">
+          <li>Window creation and message loop for Windows</li>
+          <li>XCB window creation and event loop for X11</li>
+          <li>Wayland window with decorations and event handling</li>
+          <li>Cross-platform application framework with RTTI-free type system</li>
+        </ul>
+      </section> -->
+    </div>
+
+    <footer>
+      <p>&copy; 2025 - 2026 Logenium Authors and Contributors</p>
+    </footer>
+  </body>
+</html>

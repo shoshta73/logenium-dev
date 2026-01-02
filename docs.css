@@ -1,0 +1,132 @@
+/* SPDX-FileCopyrightText: 2026 Logenium Authors and Contributors */
+/* SPDX-License-Identifier: BSD-3-Clause */
+
+.version-selector {
+  max-width: 400px;
+  margin: 2rem auto;
+}
+
+.version-button {
+  width: 100%;
+  padding: 1rem 1.5rem;
+  background: var(--bg-tertiary);
+  border: 2px solid var(--accent-primary);
+  border-radius: 8px;
+  color: var(--text-primary);
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.3s ease;
+}
+
+.version-button:hover {
+  background: var(--accent-primary);
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px var(--shadow);
+}
+
+.version-button .arrow {
+  transition: transform 0.3s ease;
+  font-size: 0.8rem;
+}
+
+.version-button.active .arrow {
+  transform: rotate(180deg);
+}
+
+.subprojects-container {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease, margin-top 0.3s ease;
+  margin-top: 0;
+}
+
+.subprojects-container.expanded {
+  max-height: 500px;
+  margin-top: 1rem;
+}
+
+.subproject-item {
+  margin-bottom: 0.75rem;
+}
+
+.subproject-item:last-child {
+  margin-bottom: 0;
+}
+
+.subproject-button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 1rem 1.5rem;
+  background: var(--bg-secondary);
+  border: 1px solid var(--accent-primary);
+  border-radius: 6px;
+  color: var(--text-primary);
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.subproject-button:hover {
+  background: var(--accent-primary);
+  color: white;
+  transform: translateX(8px);
+  box-shadow: 0 2px 4px var(--shadow);
+}
+
+.subproject-button .arrow {
+  transition: transform 0.3s ease;
+  font-size: 0.8rem;
+}
+
+.subproject-button.active .arrow {
+  transform: rotate(180deg);
+}
+
+.doc-types-container {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease, margin-top 0.3s ease;
+  margin-top: 0;
+  padding-left: 1rem;
+}
+
+.doc-types-container.expanded {
+  max-height: 200px;
+  margin-top: 0.5rem;
+}
+
+.doc-type-button {
+  display: block;
+  width: 100%;
+  padding: 0.75rem 1.25rem;
+  background: var(--bg-tertiary);
+  border: 1px solid var(--accent-secondary);
+  border-radius: 4px;
+  color: var(--text-primary);
+  font-size: 0.9rem;
+  font-weight: 400;
+  text-decoration: none;
+  text-align: center;
+  transition: all 0.3s ease;
+  margin-bottom: 0.5rem;
+}
+
+.doc-type-button:hover {
+  background: var(--accent-secondary);
+  color: white;
+  transform: translateX(4px);
+  box-shadow: 0 1px 3px var(--shadow);
+  text-decoration: none;
+}
+
+.doc-type-button:last-child {
+  margin-bottom: 0;
+}

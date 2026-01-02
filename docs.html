@@ -1,0 +1,72 @@
+<!-- SPDX-FileCopyrightText: 2026 Logenium Authors and Contributors -->
+<!-- SPDX-License-Identifier: BSD-3-Clause -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Logenium Documentation - API references and guides">
+    <title>Documentation - Logenium</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="docs.css">
+    <script type="module" src="toggle-theme.js"></script>
+    <script type="module" src="docs.js"></script>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="navbar-container">
+        <div class="navbar-logo">Logenium</div>
+        <ul class="navbar-links">
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="docs.html">Docs</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <header>
+      <div class="theme-toggle">
+        <span class="theme-toggle-label">Theme</span>
+        <div class="toggle-switch" id="themeToggle">
+          <div class="toggle-slider">☀️</div>
+        </div>
+      </div>
+      <h1>Documentation</h1>
+      <p>API references and guides for Logenium</p>
+    </header>
+
+    <div class="container">
+      <section class="section">
+        <h2>Select Documentation</h2>
+
+        <div class="version-selector">
+          <button class="version-button" id="versionButton">
+            <span>v0.0.1</span>
+            <span class="arrow">▼</span>
+          </button>
+
+          <div class="subprojects-container" id="subprojectsContainer">
+            <div class="subproject-item">
+              <button class="subproject-button" id="corelibButton">
+                <span>corelib</span>
+                <span class="arrow">▼</span>
+              </button>
+              <div class="doc-types-container" id="corelibDocsContainer">
+                <a href="#" class="doc-type-button" data-doc-type="user">
+                  User
+                </a>
+                <a href="#" class="doc-type-button" data-doc-type="dev">
+                  Dev
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <footer>
+      <p>&copy; 2025 - 2026 Logenium Authors and Contributors</p>
+    </footer>
+  </body>
+</html>
